@@ -32,8 +32,12 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.lang.String relationShipToMember;
 
-   @org.kie.api.definition.type.Label(value = "age")
+   @org.kie.api.definition.type.Label("age")
    private java.lang.Integer age;
+
+   private java.lang.String isEligible;
+
+   private java.util.List<java.lang.String> reason;
 
    public PreAuthorization()
    {
@@ -209,6 +213,26 @@ public class PreAuthorization implements java.io.Serializable
       this.age = age;
    }
 
+   public java.lang.String getIsEligible()
+   {
+      return this.isEligible;
+   }
+
+   public void setIsEligible(java.lang.String isEligible)
+   {
+      this.isEligible = isEligible;
+   }
+
+   public java.util.List<java.lang.String> getReason()
+   {
+      return this.reason;
+   }
+
+   public void setReason(java.util.List<java.lang.String> reason)
+   {
+      this.reason = reason;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -219,7 +243,8 @@ public class PreAuthorization implements java.io.Serializable
          java.util.List<hp.hputilmgt.question> questions,
          java.lang.String memberId, java.lang.String coverageType,
          java.lang.String memberName, java.lang.String patientName,
-         java.lang.String relationShipToMember, java.lang.Integer age)
+         java.lang.String relationShipToMember, java.lang.Integer age,
+         java.lang.String isEligible, java.util.List<java.lang.String> reason)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -238,6 +263,8 @@ public class PreAuthorization implements java.io.Serializable
       this.patientName = patientName;
       this.relationShipToMember = relationShipToMember;
       this.age = age;
+      this.isEligible = isEligible;
+      this.reason = reason;
    }
 
 }
