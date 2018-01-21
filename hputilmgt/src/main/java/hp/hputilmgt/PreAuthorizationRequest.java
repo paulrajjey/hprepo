@@ -16,13 +16,17 @@ public class PreAuthorizationRequest implements java.io.Serializable
    private java.lang.String patientCity;
    private java.lang.String state;
    private java.lang.String providerId;
-   @org.kie.api.definition.type.Label(value = "ProviderName")
+   @org.kie.api.definition.type.Label("ProviderName")
    private java.lang.String providerName;
    private java.lang.String providerAddress;
    private java.lang.String groupIf;
    private java.lang.String rquestId;
-   @org.kie.api.definition.type.Label(value = "Request Type")
+   @org.kie.api.definition.type.Label("Request Type")
    private java.lang.String requestType;
+
+   private java.util.Date diagnosisDate;
+
+   private java.util.Date requestDate;
 
    public PreAuthorizationRequest()
    {
@@ -148,13 +152,34 @@ public class PreAuthorizationRequest implements java.io.Serializable
       this.requestType = requestType;
    }
 
+   public java.util.Date getDiagnosisDate()
+   {
+      return this.diagnosisDate;
+   }
+
+   public void setDiagnosisDate(java.util.Date diagnosisDate)
+   {
+      this.diagnosisDate = diagnosisDate;
+   }
+
+   public java.util.Date getRequestDate()
+   {
+      return this.requestDate;
+   }
+
+   public void setRequestDate(java.util.Date requestDate)
+   {
+      this.requestDate = requestDate;
+   }
+
    public PreAuthorizationRequest(java.lang.String patientName,
          java.lang.Integer age, java.util.Date dob,
          java.lang.String patientAddress, java.lang.String patientCity,
          java.lang.String state, java.lang.String providerId,
          java.lang.String providerName, java.lang.String providerAddress,
          java.lang.String groupIf, java.lang.String rquestId,
-         java.lang.String requestType)
+         java.lang.String requestType, java.util.Date diagnosisDate,
+         java.util.Date requestDate)
    {
       this.patientName = patientName;
       this.age = age;
@@ -168,6 +193,8 @@ public class PreAuthorizationRequest implements java.io.Serializable
       this.groupIf = groupIf;
       this.rquestId = rquestId;
       this.requestType = requestType;
+      this.diagnosisDate = diagnosisDate;
+      this.requestDate = requestDate;
    }
 
 }
