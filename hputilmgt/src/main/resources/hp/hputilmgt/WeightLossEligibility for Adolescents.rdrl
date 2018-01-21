@@ -6,6 +6,7 @@ rule "WeightLossEligibility for Adolescents"
 	dialect "mvel"
 	when
 		preAuth : PreAuthorization( age >= 13 , age <= 19 )
+		exists (EligibilityCriteria( criteria == "BMI" , value > 40.0 )) 
 		not (EligibilityCriteria( criteria in ( "Type 2 Diabetes Mellitus", "Hypertension", "Heart disease", "Obstructive Sleep Apnea" ) && condition == "Y" )) 
 	then
 		preAuth.setIsEligible( "N" );
