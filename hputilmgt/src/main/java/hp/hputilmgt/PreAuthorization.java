@@ -43,6 +43,8 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.lang.String isPreviousClaimVerified;
 
+   private java.util.List<hp.hputilmgt.EligibilityCriteria> eligibilityCriterias;
+
    public PreAuthorization()
    {
    }
@@ -267,6 +269,17 @@ public class PreAuthorization implements java.io.Serializable
       this.isPreviousClaimVerified = isPreviousClaimVerified;
    }
 
+   public java.util.List<hp.hputilmgt.EligibilityCriteria> getEligibilityCriterias()
+   {
+      return this.eligibilityCriterias;
+   }
+
+   public void setEligibilityCriterias(
+         java.util.List<hp.hputilmgt.EligibilityCriteria> eligibilityCriterias)
+   {
+      this.eligibilityCriterias = eligibilityCriterias;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -279,7 +292,8 @@ public class PreAuthorization implements java.io.Serializable
          java.lang.String memberName, java.lang.String patientName,
          java.lang.String relationShipToMember, java.lang.Integer age,
          java.lang.String isEligible, java.util.List<java.lang.String> reasons,
-         java.lang.String state, java.lang.String isPreviousClaimVerified)
+         java.lang.String state, java.lang.String isPreviousClaimVerified,
+         java.util.List<hp.hputilmgt.EligibilityCriteria> eligibilityCriterias)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -302,6 +316,7 @@ public class PreAuthorization implements java.io.Serializable
       this.reasons = reasons;
       this.state = state;
       this.isPreviousClaimVerified = isPreviousClaimVerified;
+      this.eligibilityCriterias = eligibilityCriterias;
    }
 
 }
