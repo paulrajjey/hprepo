@@ -1,0 +1,9 @@
+package hp.hputilmgt;
+
+import java.lang.Number;
+
+rule "WeightLossEligibility1"
+	dialect "mvel"
+	when
+	then
+end
