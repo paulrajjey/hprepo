@@ -20,8 +20,6 @@ public class PreAuthorization implements java.io.Serializable
    private java.lang.String auditDateREceived;
    private java.lang.String attachmentWithRequest;
 
-   private java.util.List<hp.hputilmgt.question> questions;
-
    private java.lang.String memberId;
 
    private java.lang.String coverageType;
@@ -147,16 +145,6 @@ public class PreAuthorization implements java.io.Serializable
    public void setAttachmentWithRequest(java.lang.String attachmentWithRequest)
    {
       this.attachmentWithRequest = attachmentWithRequest;
-   }
-
-   public java.util.List<hp.hputilmgt.question> getQuestions()
-   {
-      return this.questions;
-   }
-
-   public void setQuestions(java.util.List<hp.hputilmgt.question> questions)
-   {
-      this.questions = questions;
    }
 
    public java.lang.String getMemberId()
@@ -286,13 +274,12 @@ public class PreAuthorization implements java.io.Serializable
          java.lang.String phoneNumber, java.lang.String nameForNotification,
          java.lang.String providerIndUrgency,
          java.lang.String auditDateREceived,
-         java.lang.String attachmentWithRequest,
-         java.util.List<hp.hputilmgt.question> questions,
-         java.lang.String memberId, java.lang.String coverageType,
-         java.lang.String memberName, java.lang.String patientName,
-         java.lang.String relationShipToMember, java.lang.Integer age,
-         java.lang.String isEligible, java.util.List<java.lang.String> reasons,
-         java.lang.String state, java.lang.String isPreviousClaimVerified,
+         java.lang.String attachmentWithRequest, java.lang.String memberId,
+         java.lang.String coverageType, java.lang.String memberName,
+         java.lang.String patientName, java.lang.String relationShipToMember,
+         java.lang.Integer age, java.lang.String isEligible,
+         java.util.List<java.lang.String> reasons, java.lang.String state,
+         java.lang.String isPreviousClaimVerified,
          java.util.List<hp.hputilmgt.EligibilityCriteria> eligibilityCriterias)
    {
       this.requestType = requestType;
@@ -305,7 +292,6 @@ public class PreAuthorization implements java.io.Serializable
       this.providerIndUrgency = providerIndUrgency;
       this.auditDateREceived = auditDateREceived;
       this.attachmentWithRequest = attachmentWithRequest;
-      this.questions = questions;
       this.memberId = memberId;
       this.coverageType = coverageType;
       this.memberName = memberName;
