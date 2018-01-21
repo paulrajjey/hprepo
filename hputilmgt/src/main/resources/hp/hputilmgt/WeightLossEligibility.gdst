@@ -12,8 +12,8 @@
   <attributeCols/>
   <conditionPatterns>
     <Pattern52>
-      <factType>EligibilityCriteria</factType>
-      <boundName>eligCriteria</boundName>
+      <factType>PreAuthorization</factType>
+      <boundName>preAuth</boundName>
       <isNegated>false</isNegated>
       <conditions>
         <condition-column52>
@@ -24,63 +24,18 @@
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
           <width>-1</width>
-          <header>Criteria</header>
+          <header>Coverage Type</header>
           <constraintValueType>1</constraintValueType>
-          <factField>criteria</factField>
-          <fieldType>String</fieldType>
-          <operator>==</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_DOUBLE</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>greater than equal to</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>value</factField>
-          <fieldType>Double</fieldType>
-          <operator>&gt;=</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>NUMERIC_DOUBLE</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>less than equal to</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>value</factField>
-          <fieldType>Double</fieldType>
-          <operator>&lt;=</operator>
-          <parameters/>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>-1</width>
-          <header>other condition</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>condition</factField>
+          <factField>coverageType</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
           <parameters/>
         </condition-column52>
       </conditions>
       <window>
-        <operator></operator>
         <parameters/>
       </window>
+      <entryPointName>C1009</entryPointName>
     </Pattern52>
   </conditionPatterns>
   <actionCols/>
@@ -127,22 +82,6 @@
       <value>
         <valueString></valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString>BMI</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueNumeric class="double">40.0</valueNumeric>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
-        <dataType>NUMERIC_DOUBLE</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
