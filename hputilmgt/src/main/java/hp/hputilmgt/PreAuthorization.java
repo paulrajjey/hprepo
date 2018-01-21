@@ -37,7 +37,7 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.lang.String isEligible;
 
-   private java.util.List<java.lang.String> reason;
+   private java.util.List<java.lang.String> reasons;
 
    public PreAuthorization()
    {
@@ -223,17 +223,16 @@ public class PreAuthorization implements java.io.Serializable
       this.isEligible = isEligible;
    }
 
-   public java.util.List<java.lang.String> getReason()
+   public java.util.List<java.lang.String> getReasons()
    {
-      return this.reason;
+      return this.reasons;
    }
 
-   public void setReason(java.util.List<java.lang.String> reason)
+   public void setReasons(java.util.List<java.lang.String> reasons)
    {
-      this.reason = reason;
+      this.reasons = reasons;
    }
-   
-   
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -245,7 +244,7 @@ public class PreAuthorization implements java.io.Serializable
          java.lang.String memberId, java.lang.String coverageType,
          java.lang.String memberName, java.lang.String patientName,
          java.lang.String relationShipToMember, java.lang.Integer age,
-         java.lang.String isEligible, java.util.List<java.lang.String> reason)
+         java.lang.String isEligible, java.util.List<java.lang.String> reasons)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -265,7 +264,7 @@ public class PreAuthorization implements java.io.Serializable
       this.relationShipToMember = relationShipToMember;
       this.age = age;
       this.isEligible = isEligible;
-      this.reason = reason;
+      this.reasons = reasons;
    }
 
 }
