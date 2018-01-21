@@ -32,6 +32,9 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.lang.String relationShipToMember;
 
+   @org.kie.api.definition.type.Label(value = "age")
+   private java.lang.Integer age;
+
    public PreAuthorization()
    {
    }
@@ -196,6 +199,16 @@ public class PreAuthorization implements java.io.Serializable
       this.relationShipToMember = relationShipToMember;
    }
 
+   public java.lang.Integer getAge()
+   {
+      return this.age;
+   }
+
+   public void setAge(java.lang.Integer age)
+   {
+      this.age = age;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -206,7 +219,7 @@ public class PreAuthorization implements java.io.Serializable
          java.util.List<hp.hputilmgt.question> questions,
          java.lang.String memberId, java.lang.String coverageType,
          java.lang.String memberName, java.lang.String patientName,
-         java.lang.String relationShipToMember)
+         java.lang.String relationShipToMember, java.lang.Integer age)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -224,6 +237,7 @@ public class PreAuthorization implements java.io.Serializable
       this.memberName = memberName;
       this.patientName = patientName;
       this.relationShipToMember = relationShipToMember;
+      this.age = age;
    }
 
 }
