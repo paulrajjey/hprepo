@@ -11,10 +11,12 @@ public class Queations implements java.io.Serializable
 
    private java.lang.String requestType;
    private java.lang.String questionId;
-   @org.kie.api.definition.type.Label(value = "Question Code")
+   @org.kie.api.definition.type.Label("Question Code")
    private java.lang.String code;
    private java.lang.String type;
    private java.lang.String answer;
+
+   private java.lang.String isRequired;
 
    public Queations()
    {
@@ -70,15 +72,26 @@ public class Queations implements java.io.Serializable
       this.answer = answer;
    }
 
+   public java.lang.String getIsRequired()
+   {
+      return this.isRequired;
+   }
+
+   public void setIsRequired(java.lang.String isRequired)
+   {
+      this.isRequired = isRequired;
+   }
+
    public Queations(java.lang.String requestType, java.lang.String questionId,
-         java.lang.String code, java.lang.String type,
-         java.lang.String answer)
+         java.lang.String code, java.lang.String type, java.lang.String answer,
+         java.lang.String isRequired)
    {
       this.requestType = requestType;
       this.questionId = questionId;
       this.code = code;
       this.type = type;
       this.answer = answer;
+      this.isRequired = isRequired;
    }
 
 }
