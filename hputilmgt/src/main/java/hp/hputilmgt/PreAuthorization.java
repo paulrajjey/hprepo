@@ -20,6 +20,8 @@ public class PreAuthorization implements java.io.Serializable
    private java.lang.String auditDateREceived;
    private java.lang.String attachmentWithRequest;
 
+   private java.util.List<hp.hputilmgt.question> questions;
+
    public PreAuthorization()
    {
    }
@@ -124,13 +126,24 @@ public class PreAuthorization implements java.io.Serializable
       this.attachmentWithRequest = attachmentWithRequest;
    }
 
+   public java.util.List<hp.hputilmgt.question> getQuestions()
+   {
+      return this.questions;
+   }
+
+   public void setQuestions(java.util.List<hp.hputilmgt.question> questions)
+   {
+      this.questions = questions;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
          java.lang.String phoneNumber, java.lang.String nameForNotification,
          java.lang.String providerIndUrgency,
          java.lang.String auditDateREceived,
-         java.lang.String attachmentWithRequest)
+         java.lang.String attachmentWithRequest,
+         java.util.List<hp.hputilmgt.question> questions)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -142,6 +155,7 @@ public class PreAuthorization implements java.io.Serializable
       this.providerIndUrgency = providerIndUrgency;
       this.auditDateREceived = auditDateREceived;
       this.attachmentWithRequest = attachmentWithRequest;
+      this.questions = questions;
    }
 
 }
