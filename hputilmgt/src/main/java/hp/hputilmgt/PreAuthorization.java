@@ -22,6 +22,10 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.util.List<hp.hputilmgt.question> questions;
 
+   private java.lang.String memberId;
+
+   private java.lang.String coverageType;
+
    public PreAuthorization()
    {
    }
@@ -136,6 +140,26 @@ public class PreAuthorization implements java.io.Serializable
       this.questions = questions;
    }
 
+   public java.lang.String getMemberId()
+   {
+      return this.memberId;
+   }
+
+   public void setMemberId(java.lang.String memberId)
+   {
+      this.memberId = memberId;
+   }
+
+   public java.lang.String getCoverageType()
+   {
+      return this.coverageType;
+   }
+
+   public void setCoverageType(java.lang.String coverageType)
+   {
+      this.coverageType = coverageType;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -143,7 +167,8 @@ public class PreAuthorization implements java.io.Serializable
          java.lang.String providerIndUrgency,
          java.lang.String auditDateREceived,
          java.lang.String attachmentWithRequest,
-         java.util.List<hp.hputilmgt.question> questions)
+         java.util.List<hp.hputilmgt.question> questions,
+         java.lang.String memberId, java.lang.String coverageType)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -156,6 +181,8 @@ public class PreAuthorization implements java.io.Serializable
       this.auditDateREceived = auditDateREceived;
       this.attachmentWithRequest = attachmentWithRequest;
       this.questions = questions;
+      this.memberId = memberId;
+      this.coverageType = coverageType;
    }
 
 }
