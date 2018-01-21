@@ -232,7 +232,8 @@ public class PreAuthorization implements java.io.Serializable
    {
       this.reason = reason;
    }
-
+   
+   
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
