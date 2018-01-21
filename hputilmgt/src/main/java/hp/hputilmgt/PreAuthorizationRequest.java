@@ -17,20 +17,30 @@ public class PreAuthorizationRequest implements java.io.Serializable
    private java.util.Date dob;
    @org.kie.api.definition.type.Label("Patient Address")
    private java.lang.String patientAddress;
+   @org.kie.api.definition.type.Label("Patient City")
    private java.lang.String patientCity;
+   @org.kie.api.definition.type.Label("Patient state")
    private java.lang.String state;
+   @org.kie.api.definition.type.Label("Provider Id")
    private java.lang.String providerId;
    @org.kie.api.definition.type.Label("ProviderName")
    private java.lang.String providerName;
+   @org.kie.api.definition.type.Label("Provider Address")
    private java.lang.String providerAddress;
-   private java.lang.String groupIf;
-   private java.lang.String rquestId;
    @org.kie.api.definition.type.Label("Request Type")
    private java.lang.String requestType;
 
+   @org.kie.api.definition.type.Label("Diagnosis Date")
    private java.util.Date diagnosisDate;
 
+   @org.kie.api.definition.type.Label("Request Date")
    private java.util.Date requestDate;
+
+   @org.kie.api.definition.type.Label(value = "Group Id")
+   private java.lang.String groupId;
+
+   @org.kie.api.definition.type.Label(value = "Request Id")
+   private java.lang.String requestId;
 
    public PreAuthorizationRequest()
    {
@@ -126,26 +136,6 @@ public class PreAuthorizationRequest implements java.io.Serializable
       this.providerAddress = providerAddress;
    }
 
-   public java.lang.String getGroupIf()
-   {
-      return this.groupIf;
-   }
-
-   public void setGroupIf(java.lang.String groupIf)
-   {
-      this.groupIf = groupIf;
-   }
-
-   public java.lang.String getRquestId()
-   {
-      return this.rquestId;
-   }
-
-   public void setRquestId(java.lang.String rquestId)
-   {
-      this.rquestId = rquestId;
-   }
-
    public java.lang.String getRequestType()
    {
       return this.requestType;
@@ -176,14 +166,34 @@ public class PreAuthorizationRequest implements java.io.Serializable
       this.requestDate = requestDate;
    }
 
+   public java.lang.String getGroupId()
+   {
+      return this.groupId;
+   }
+
+   public void setGroupId(java.lang.String groupId)
+   {
+      this.groupId = groupId;
+   }
+
+   public java.lang.String getRequestId()
+   {
+      return this.requestId;
+   }
+
+   public void setRequestId(java.lang.String requestId)
+   {
+      this.requestId = requestId;
+   }
+
    public PreAuthorizationRequest(java.lang.String patientName,
          java.lang.Integer age, java.util.Date dob,
          java.lang.String patientAddress, java.lang.String patientCity,
          java.lang.String state, java.lang.String providerId,
          java.lang.String providerName, java.lang.String providerAddress,
-         java.lang.String groupIf, java.lang.String rquestId,
          java.lang.String requestType, java.util.Date diagnosisDate,
-         java.util.Date requestDate)
+         java.util.Date requestDate, java.lang.String groupId,
+         java.lang.String requestId)
    {
       this.patientName = patientName;
       this.age = age;
@@ -194,11 +204,11 @@ public class PreAuthorizationRequest implements java.io.Serializable
       this.providerId = providerId;
       this.providerName = providerName;
       this.providerAddress = providerAddress;
-      this.groupIf = groupIf;
-      this.rquestId = rquestId;
       this.requestType = requestType;
       this.diagnosisDate = diagnosisDate;
       this.requestDate = requestDate;
+      this.groupId = groupId;
+      this.requestId = requestId;
    }
 
 }
