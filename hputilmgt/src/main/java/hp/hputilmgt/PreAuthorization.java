@@ -26,6 +26,12 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.lang.String coverageType;
 
+   private java.lang.String memberName;
+
+   private java.lang.String patientName;
+
+   private java.lang.String relationShipToMember;
+
    public PreAuthorization()
    {
    }
@@ -160,6 +166,36 @@ public class PreAuthorization implements java.io.Serializable
       this.coverageType = coverageType;
    }
 
+   public java.lang.String getMemberName()
+   {
+      return this.memberName;
+   }
+
+   public void setMemberName(java.lang.String memberName)
+   {
+      this.memberName = memberName;
+   }
+
+   public java.lang.String getPatientName()
+   {
+      return this.patientName;
+   }
+
+   public void setPatientName(java.lang.String patientName)
+   {
+      this.patientName = patientName;
+   }
+
+   public java.lang.String getRelationShipToMember()
+   {
+      return this.relationShipToMember;
+   }
+
+   public void setRelationShipToMember(java.lang.String relationShipToMember)
+   {
+      this.relationShipToMember = relationShipToMember;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -168,7 +204,9 @@ public class PreAuthorization implements java.io.Serializable
          java.lang.String auditDateREceived,
          java.lang.String attachmentWithRequest,
          java.util.List<hp.hputilmgt.question> questions,
-         java.lang.String memberId, java.lang.String coverageType)
+         java.lang.String memberId, java.lang.String coverageType,
+         java.lang.String memberName, java.lang.String patientName,
+         java.lang.String relationShipToMember)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -183,6 +221,9 @@ public class PreAuthorization implements java.io.Serializable
       this.questions = questions;
       this.memberId = memberId;
       this.coverageType = coverageType;
+      this.memberName = memberName;
+      this.patientName = patientName;
+      this.relationShipToMember = relationShipToMember;
    }
 
 }
