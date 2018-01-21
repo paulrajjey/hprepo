@@ -16,14 +16,27 @@ public class PreRequestService implements java.io.Serializable
    public void processRequest(hp.hputilmgt.PreAuthorization preAuthorization)
    {
 
-      java.util.List<hp.hputilmgt.question> questions = preAuthorization.getQuestions();
-      java.util.List<hp.hputilmgt.EligibilityCriteria>  questions = preAuthorization.getEligibilityCriterias()();
+      java.util.List<hp.hputilmgt.Question> questions = preAuthorization.getQuestions();
+      java.util.List<hp.hputilmgt.EligibilityCriteria>  answers = preAuthorization.getEligibilityCriterias();
+      answers = new java.util.ArrayList<hp.hputilmgt.EligibilityCriteria>();
 
-      for (question q : questions)
+      for (Question q : questions)
       {
-            q.getCode();
-            q.getAnswer();
+            java.lang.String qu = q.getCode();
+            java.lang.String an = q.getAnswer();
+            hp.hputilmgt.EligibilityCriteria criteria = new hp.hputilmgt.EligibilityCriteria();
             
+            if("BMI".equals(qu))
+            {
+                double vl = java.lang.Double.parseDouble(qu);
+                criteria.setValue(vl);
+            }else{
+                criteria.setCondition(an);
+            }
+            criteria.setCriteria(qu);
+            
+            
+            answers.add(criteria);
       }
 
    }
