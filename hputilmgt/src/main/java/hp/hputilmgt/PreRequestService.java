@@ -9,34 +9,20 @@ public class PreRequestService implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private hp.hputilmgt.PreAuthorization preAuthRequest;
-
    public PreRequestService()
    {
    }
 
-    public void processRequest(hp.hputilmgt.PreAuthorization preAuthorization){
-        
-        java.util.List<hp.hputilmgt.question>  questions = preAuthorization.getQuestions();
-        
-        for(question q :  questions){
-            
-        }
-        
-    }
-   public hp.hputilmgt.PreAuthorization getPreAuthRequest()
+   public void processRequest(hp.hputilmgt.PreAuthorization preAuthorization)
    {
-      return this.preAuthRequest;
-   }
 
-   public void setPreAuthRequest(hp.hputilmgt.PreAuthorization preAuthRequest)
-   {
-      this.preAuthRequest = preAuthRequest;
-   }
+      java.util.List<hp.hputilmgt.question> questions = preAuthorization.getQuestions();
 
-   public PreRequestService(hp.hputilmgt.PreAuthorization preAuthRequest)
-   {
-      this.preAuthRequest = preAuthRequest;
+      for (question q : questions)
+      {
+
+      }
+
    }
 
 }
