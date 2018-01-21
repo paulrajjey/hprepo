@@ -232,6 +232,15 @@ public class PreAuthorization implements java.io.Serializable
    {
       this.reasons = reasons;
    }
+   public void addReason(java.lang.String reason)
+   {
+      if(this.reasons == null){
+          
+          this.reasons = new java.util.ArrayList<java.lang.String>();
+      }
+      this.reasons.add(reason);
+   }
+
 
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
