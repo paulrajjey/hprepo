@@ -17,10 +17,13 @@ public class PreRequestService implements java.io.Serializable
    {
 
       java.util.List<hp.hputilmgt.question> questions = preAuthorization.getQuestions();
+      java.util.List<hp.hputilmgt.EligibilityCriteria>  questions = preAuthorization.getEligibilityCriterias()();
 
       for (question q : questions)
       {
-
+            q.getCode();
+            q.getAnswer();
+            
       }
 
    }
