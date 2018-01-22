@@ -60,10 +60,8 @@ import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
   [
     "name" : "Notification",
     "parameters" : [
-      "From" : new StringDataType(),
-      "To" : new StringDataType(),
-      "Subject" : new StringDataType(),
-      "Body" : new StringDataType()
+      "message" : new ObjectDataType(),
+     
     ],
     "displayName" : "Care Partner Notification",
     "icon" : "defaultemailicon.gif"
