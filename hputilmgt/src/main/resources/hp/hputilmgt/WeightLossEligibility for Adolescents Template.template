@@ -179,7 +179,19 @@
       </patterns>
     </compositePattern>
   </lhs>
-  <rhs/>
+  <rhs>
+    <setField>
+      <fieldValues>
+        <fieldValue>
+          <field>isEligible</field>
+          <value>IsEligible</value>
+          <nature>7</nature>
+          <type>String</type>
+        </fieldValue>
+      </fieldValues>
+      <variable>preAuth</variable>
+    </setField>
+  </rhs>
   <imports>
     <imports/>
   </imports>
@@ -189,7 +201,7 @@
     <entry>
       <string>anyOftheFollowingConsitionExist</string>
       <list>
-        <string>BMI greater than 40.0 with at least one significant obesity-related disease complication which has failed to be controlled with medical management including but not limited to: Type 2 Diabetes Mellitus, Hypertension, Heart disease, Obstructive Sleep Apnea.</string>
+        <string>Type 2 Diabetes Mellitus&quot;, &quot;Hypertension&quot;, &quot;Heart disease&quot;, &quot;Obstructive Sleep Apnea</string>
       </list>
     </entry>
     <entry>
@@ -202,6 +214,12 @@
       <string>MinimumAge</string>
       <list>
         <string>13</string>
+      </list>
+    </entry>
+    <entry>
+      <string>IsEligible</string>
+      <list>
+        <string></string>
       </list>
     </entry>
     <entry>
