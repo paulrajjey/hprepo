@@ -111,7 +111,7 @@
 <property name="outputBinding" value="request/requestType"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="9" name="request_questions" bag-type="hp.hputilmgt.Question" type="MultipleSubform" id="197729049">
+<field position="11" name="request_questions" bag-type="hp.hputilmgt.Question" type="MultipleSubform" id="197729049">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;questionsquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -133,24 +133,27 @@
 <property name="enableTableEnterData" value="false"/>
 <property name="fieldClass" value="java.util.List"/>
 </field>
-<field position="10" name="notificationEmail" type="InputText" id="1958959858">
+<field position="9" name="notificationEmail" type="InputText" id="1958959858">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;notificationEmail (notificationEmail)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Notification Emailquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="notificationEmail"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="11" name="notificationMessage" type="MultipleInput" id="105163388">
+<field position="10" name="smsmobile" type="InputText" id="1738094859">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;notificationMessage (notificationMessage)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Contact Phone #quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="notificationMessage"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="12" name="smsmobile" type="InputText" id="1738094859">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;smsmobile (smsmobile)quot;"/>
-<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="smsmobile"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
