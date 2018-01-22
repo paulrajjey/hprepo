@@ -1,7 +1,12 @@
 <rule>
   <name>WeightLossEligibility for Adults age over 19 template</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>eligibilityRule</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <fact>
