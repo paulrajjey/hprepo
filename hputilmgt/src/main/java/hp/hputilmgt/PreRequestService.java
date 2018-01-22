@@ -19,7 +19,7 @@ public class PreRequestService implements java.io.Serializable
       java.util.List<hp.hputilmgt.Question> questions = preAuthorization.getQuestions();
       java.util.List<hp.hputilmgt.EligibilityCriteria>  answers = preAuthorization.getEligibilityCriterias();
       answers = new java.util.ArrayList<hp.hputilmgt.EligibilityCriteria>();
-
+      System.out.println("number of questions" + answers.size());
       for (Question q : questions)
       {
             java.lang.String qu = q.getCode();
@@ -38,7 +38,7 @@ public class PreRequestService implements java.io.Serializable
             
             answers.add(criteria);
       }
-
+    System.out.println("number of cretirai" + answers.size());
    }
    
    public void verifyPreviousClaim(hp.hputilmgt.PreAuthorization preAuthorization)
