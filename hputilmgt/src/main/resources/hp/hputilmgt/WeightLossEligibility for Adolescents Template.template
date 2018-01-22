@@ -1,7 +1,12 @@
 <rule>
   <name>WeightLossEligibility for Adolescents Template</name>
   <modelVersion>1.0</modelVersion>
-  <attributes/>
+  <attributes>
+    <attribute>
+      <attributeName>ruleflow-group</attributeName>
+      <value>eligibilityRule</value>
+    </attribute>
+  </attributes>
   <metadataList/>
   <lhs>
     <fact>
