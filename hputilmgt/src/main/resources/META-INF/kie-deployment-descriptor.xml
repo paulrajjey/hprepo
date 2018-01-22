@@ -34,6 +34,12 @@
             <parameters/>
             <name>Rest</name>
         </work-item-handler>
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new com.workitem.workitem.NotificationWorkItemHandler()</identifier>
+            <parameters/>
+            <name>Notification</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
