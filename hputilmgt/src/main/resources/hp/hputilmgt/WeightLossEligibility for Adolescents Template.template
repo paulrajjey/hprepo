@@ -188,25 +188,35 @@
   <table>
     <entry>
       <string>anyOftheFollowingConsitionExist</string>
-      <list/>
+      <list>
+        <string>BMI greater than 40.0 with at least one significant obesity-related disease complication which has failed to be controlled with medical management including but not limited to: Type 2 Diabetes Mellitus, Hypertension, Heart disease, Obstructive Sleep Apnea.</string>
+      </list>
     </entry>
     <entry>
       <string>__ID_KOL_NAME__</string>
-      <list/>
+      <list>
+        <string>1</string>
+      </list>
     </entry>
     <entry>
       <string>MinimumAge</string>
-      <list/>
+      <list>
+        <string>13</string>
+      </list>
     </entry>
     <entry>
       <string>MaximumAge</string>
-      <list/>
+      <list>
+        <string>19</string>
+      </list>
     </entry>
     <entry>
       <string>BMI</string>
-      <list/>
+      <list>
+        <string>40</string>
+      </list>
     </entry>
   </table>
-  <idCol>0</idCol>
-  <rowsCount>0</rowsCount>
+  <idCol>1</idCol>
+  <rowsCount>1</rowsCount>
 </rule>
