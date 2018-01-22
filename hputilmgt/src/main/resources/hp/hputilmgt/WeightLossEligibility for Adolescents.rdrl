@@ -5,6 +5,7 @@ import java.lang.Number;
 rule "WeightLossEligibility for Adolescents"
 	dialect "mvel"
 	ruleflow-group "eligibilityRule"
+	enabled false
 	when
 		preAuth : PreAuthorization( age >= 13 , age <= 19 )
 		exists (		EligibilityCriteria( criteria == "BMI" , value > 40.0 ) from preAuth.eligibilityCriterias
