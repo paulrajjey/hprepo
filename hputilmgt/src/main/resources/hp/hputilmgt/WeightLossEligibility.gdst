@@ -105,7 +105,7 @@
       <header>Addreason</header>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>preAuth.addReason( &quot;Coverage&quot; + preAuth.getCoverageType() + &quot; not eligible for &quot; + preAuth.getRequestType() + &quot; on  &quot; + preAuth.getState() );</text>
+          <text>preAuth.addReason( &quot;Coverage&quot; + preAuth.getCoverageType() + &quot; not eligible for &quot; + preAuth.getRequestType() + &quot; in the state of  &quot; + preAuth.getState() );</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
