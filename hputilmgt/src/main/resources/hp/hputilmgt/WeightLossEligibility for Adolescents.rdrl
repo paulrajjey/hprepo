@@ -13,5 +13,5 @@ rule "WeightLossEligibility for Adolescents"
 ) 
 	then
 		preAuth.setIsEligible( "N" );
-		preAuth.addReason( "BMI > 40.0 with at least one significant obesity-related disease complication which has failed to be controlled with medical management including, but not limited to: Type 2 Diabetes Mellitus, Hypertension,Heart disease,Obstructive Sleep Apnea." );
+		preAuth.addReason( "BMI > 40.0 with at least one significant obesity-related disease complication which has failed to be controlled with medical management including\", but not limited to: Type 2 Diabetes Mellitus, Hypertension, Heart disease, Obstructive Sleep Apnea." );
 end
