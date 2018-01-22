@@ -45,6 +45,8 @@ public class PreAuthorization implements java.io.Serializable
 
    private java.util.List<hp.hputilmgt.Question> questions;
 
+   private java.lang.String errorMessage;
+
    public PreAuthorization()
    {
    }
@@ -280,6 +282,16 @@ public class PreAuthorization implements java.io.Serializable
       this.questions = questions;
    }
 
+   public java.lang.String getErrorMessage()
+   {
+      return this.errorMessage;
+   }
+
+   public void setErrorMessage(java.lang.String errorMessage)
+   {
+      this.errorMessage = errorMessage;
+   }
+
    public PreAuthorization(java.lang.String requestType,
          java.lang.String trackingNumber, java.lang.String creationDate,
          java.util.Date createdBy, java.lang.String createdByFacility,
@@ -293,7 +305,8 @@ public class PreAuthorization implements java.io.Serializable
          java.util.List<java.lang.String> reasons, java.lang.String state,
          java.lang.String isPreviousClaimVerified,
          java.util.List<hp.hputilmgt.EligibilityCriteria> eligibilityCriterias,
-         java.util.List<hp.hputilmgt.Question> questions)
+         java.util.List<hp.hputilmgt.Question> questions,
+         java.lang.String errorMessage)
    {
       this.requestType = requestType;
       this.trackingNumber = trackingNumber;
@@ -317,6 +330,7 @@ public class PreAuthorization implements java.io.Serializable
       this.isPreviousClaimVerified = isPreviousClaimVerified;
       this.eligibilityCriterias = eligibilityCriterias;
       this.questions = questions;
+      this.errorMessage = errorMessage;
    }
 
 }
