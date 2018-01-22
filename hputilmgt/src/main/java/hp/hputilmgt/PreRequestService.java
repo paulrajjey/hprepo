@@ -28,7 +28,7 @@ public class PreRequestService implements java.io.Serializable
             
             if("BMI".equals(qu))
             {
-                double vl = java.lang.Double.parseDouble(qu);
+                double vl = java.lang.Double.parseDouble(an);
                 criteria.setValue(vl);
             }else{
                 criteria.setCondition(an);
