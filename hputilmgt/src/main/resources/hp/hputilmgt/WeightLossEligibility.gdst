@@ -170,7 +170,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>CW1009</valueString>
+        <valueString>CWI1009</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -214,7 +214,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>MN1009</valueString>
+        <valueString>CMN1009</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
