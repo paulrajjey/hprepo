@@ -5,6 +5,7 @@ import java.lang.Number;
 rule "WeightLossEligibility for Adults age over 19"
 	dialect "mvel"
 	ruleflow-group "eligibilityRule"
+	enabled false
 	when
 		preAuth : PreAuthorization( age > 19 )
 		exists (		EligibilityCriteria( criteria == "BMI" && value >= 35.0 && value <= 39.0 ) from preAuth.eligibilityCriterias
@@ -13,5 +14,5 @@ rule "WeightLossEligibility for Adults age over 19"
 ) 
 	then
 		preAuth.setIsEligible( "N" );
-		preAuth.addReason( "BMI is between 35 – 39.9 with at least one significant obesity related disease complication which has failed to be controlled with medical management including Type 2 Diabetes Mellitus , Hypertension , Coronary Artery Disease , Obstructive Sleep Apnea." );
+		preAuth.addReason( "\"BMI is between 35 – 39.9 with at least one significant obesity related disease complication which has failed to be controlled with medical management including Type 2 Diabetes Mellitus", Hypertension, Coronary Artery Disease, Obstructive Sleep Apnea." );
 end
