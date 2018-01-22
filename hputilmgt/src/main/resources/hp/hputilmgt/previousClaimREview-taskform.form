@@ -3,180 +3,95 @@
 <property name="name" value="previousClaimREview-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="11" name="request_memberName" type="InputText" id="1358463064">
+<field position="6" name="request_isPreviousClaimVerified" type="InputText" id="257974344">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;memberName (request)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Previous Claimquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/memberName"/>
-<property name="outputBinding" value="reqout/memberName"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="15" name="request_providerIndUrgency" type="InputText" id="37715102">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;providerIndUrgency (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/providerIndUrgency"/>
-<property name="outputBinding" value="reqout/providerIndUrgency"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="14" name="request_phoneNumber" type="InputText" id="1424195936">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;phoneNumber (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/phoneNumber"/>
-<property name="outputBinding" value="reqout/phoneNumber"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="20" name="request_state" type="InputText" id="396797058">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;state (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/state"/>
-<property name="outputBinding" value="reqout/state"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="7" name="request_eligibilityCriterias" bag-type="hp.hputilmgt.EligibilityCriteria" type="MultipleSubform" id="958448134">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;eligibilityCriterias (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/eligibilityCriterias"/>
-<property name="outputBinding" value="reqout/eligibilityCriterias"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="2" name="request_auditDateREceived" type="InputText" id="564914668">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;auditDateREceived (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/auditDateREceived"/>
-<property name="outputBinding" value="reqout/auditDateREceived"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="3" name="request_coverageType" type="InputText" id="688102180">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;coverageType (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/coverageType"/>
-<property name="outputBinding" value="reqout/coverageType"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="16" name="request_questions" bag-type="hp.hputilmgt.Question" type="MultipleSubform" id="333542598">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;questions (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/questions"/>
-<property name="outputBinding" value="reqout/questions"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="6" name="request_creationDate" type="InputText" id="1279622925">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;creationDate (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/creationDate"/>
-<property name="outputBinding" value="reqout/creationDate"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="9" name="request_isPreviousClaimVerified" type="InputText" id="257974344">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;isPreviousClaimVerified (request)quot;"/>
-<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="reqin/isPreviousClaimVerified"/>
 <property name="outputBinding" value="reqout/isPreviousClaimVerified"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="17" name="request_reasons" bag-type="java.lang.String" type="MultipleInput" id="182276501">
+<field position="1" name="request_memberId" type="InputText" id="1677596132">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;reasons (request)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Member Idquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/reasons"/>
-<property name="outputBinding" value="reqout/reasons"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="13" name="request_patientName" type="InputText" id="752934027">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;patientName (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/patientName"/>
-<property name="outputBinding" value="reqout/patientName"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="0" name="request_age" type="InputTextInteger" id="1434903336">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;age (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/age"/>
-<property name="outputBinding" value="reqout/age"/>
-<property name="fieldClass" value="java.lang.Integer"/>
-</field>
-<field position="5" name="request_createdByFacility" type="InputText" id="1950455279">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;createdByFacility (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/createdByFacility"/>
-<property name="outputBinding" value="reqout/createdByFacility"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="12" name="request_nameForNotification" type="InputText" id="1470384939">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;nameForNotification (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/nameForNotification"/>
-<property name="outputBinding" value="reqout/nameForNotification"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="8" name="request_isEligible" type="InputText" id="1094354690">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;isEligible (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/isEligible"/>
-<property name="outputBinding" value="reqout/isEligible"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="19" name="request_requestType" type="InputText" id="1916243599">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;requestType (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/requestType"/>
-<property name="outputBinding" value="reqout/requestType"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="18" name="request_relationShipToMember" type="InputText" id="229023455">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;relationShipToMember (request)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/relationShipToMember"/>
-<property name="outputBinding" value="reqout/relationShipToMember"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="10" name="request_memberId" type="InputText" id="1677596132">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;memberId (request)quot;"/>
-<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="reqin/memberId"/>
 <property name="outputBinding" value="reqout/memberId"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="21" name="request_trackingNumber" type="InputText" id="926522947">
+<field position="2" name="request_memberName" type="InputText" id="1358463064">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;trackingNumber (request)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Member Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/trackingNumber"/>
-<property name="outputBinding" value="reqout/trackingNumber"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="reqin/memberName"/>
+<property name="outputBinding" value="reqout/memberName"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="request_createdBy" type="InputDate" id="169183470">
+<field position="4" name="request_patientName" type="InputText" id="752934027">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;createdBy (request)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Patient Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/createdBy"/>
-<property name="outputBinding" value="reqout/createdBy"/>
-<property name="fieldClass" value="java.util.Date"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="reqin/patientName"/>
+<property name="outputBinding" value="reqout/patientName"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="request_attachmentWithRequest" type="InputText" id="1095713841">
+<field position="3" name="request_requestType" type="InputText" id="1916243599">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;attachmentWithRequest (request)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Request Typequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="inputBinding" value="reqin/attachmentWithRequest"/>
-<property name="outputBinding" value="reqout/attachmentWithRequest"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="reqin/requestType"/>
+<property name="outputBinding" value="reqout/requestType"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="request_state" type="InputText" id="396797058">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Statequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="reqin/state"/>
+<property name="outputBinding" value="reqout/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="request_trackingNumber" type="InputText" id="926522947">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Tracking Numberquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="reqin/trackingNumber"/>
+<property name="outputBinding" value="reqout/trackingNumber"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="reqin" name="#E9E371" type="dataModelerEntry" outId="reqout" value="hp.hputilmgt.PreAuthorization" id="request"/>
