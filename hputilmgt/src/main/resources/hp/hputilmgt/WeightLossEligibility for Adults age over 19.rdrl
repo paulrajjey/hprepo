@@ -13,5 +13,5 @@ rule "WeightLossEligibility for Adults age over 19"
 ) 
 	then
 		preAuth.setIsEligible( "N" );
-		preAuth.addReason( "BMI greater than 40.0 with at least one significant obesity related disease complication which has failed to be controlled with medical management including" );
+		preAuth.addReason( "BMI is between 35 – 39.9 with at least one significant obesity related disease complication which has failed to be controlled with medical management including Type 2 Diabetes Mellitus , Hypertension , Coronary Artery Disease , Obstructive Sleep Apnea." );
 end
