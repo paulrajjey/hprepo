@@ -290,6 +290,12 @@ public class PreAuthorization implements java.io.Serializable
    public void setErrorMessage(java.lang.String errorMessage)
    {
       this.errorMessage = errorMessage;
+      if (this.reasons == null)
+      {
+
+         this.reasons = new java.util.ArrayList<java.lang.String>();
+      }
+      this.reasons.add(errorMessage);
    }
 
    public PreAuthorization(java.lang.String requestType,
