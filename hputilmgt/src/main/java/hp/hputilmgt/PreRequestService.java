@@ -40,5 +40,16 @@ public class PreRequestService implements java.io.Serializable
       }
 
    }
+   
+   public void verifyPreviousClaim(hp.hputilmgt.PreAuthorization preAuthorization)
+   {
+        String trackingNo  = preAuthorization.getTrackingNumber();
+        if("CLTEST".equals(trackingNo)){
+            preAuthorization.setIsPreviousClaimVerified("yes");
+        }else{
+            preAuthorization.setIsPreviousClaimVerified("no");
+        }
+       
+   }
 
 }
