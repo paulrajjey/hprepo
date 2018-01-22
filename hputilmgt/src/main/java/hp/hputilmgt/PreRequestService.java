@@ -46,6 +46,8 @@ public class PreRequestService implements java.io.Serializable
         String trackingNo  = preAuthorization.getTrackingNumber();
         if("CLTEST".equals(trackingNo)){
             preAuthorization.setIsPreviousClaimVerified("yes");
+            preAuthorization.setIsEligible("N");
+            preAuthorization.addReason("There was a claim made for this request before.");
         }else{
             preAuthorization.setIsPreviousClaimVerified("no");
         }
