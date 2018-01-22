@@ -37,6 +37,7 @@ public class PreRequestService implements java.io.Serializable
             
             
             answers.add(criteria);
+            preAuthorization.setEligibilityCriterias(answers)
       }
     System.out.println("number of cretirai" + answers.size());
    }
