@@ -1,0 +1,1 @@
+[when] There is medical claim request is {eligible}= PreAuthorization( isEligible == "{eligible}" )
