@@ -1,0 +1,9 @@
+package hp.hputilmgt;
+
+import java.lang.Number;
+
+rule "dlsRule"
+	dialect "mvel"
+	when
+	then
+end
