@@ -14,6 +14,8 @@ public class EligibilityCriteria implements java.io.Serializable
    private java.lang.String condition;
    private java.lang.String id;
 
+   private java.lang.Integer newId;
+
    public EligibilityCriteria()
    {
    }
@@ -58,13 +60,24 @@ public class EligibilityCriteria implements java.io.Serializable
       this.id = id;
    }
 
+   public java.lang.Integer getNewId()
+   {
+      return this.newId;
+   }
+
+   public void setNewId(java.lang.Integer newId)
+   {
+      this.newId = newId;
+   }
+
    public EligibilityCriteria(java.lang.String criteria, double value,
-         java.lang.String condition, java.lang.String id)
+         java.lang.String condition, java.lang.String id, java.lang.Integer newId)
    {
       this.criteria = criteria;
       this.value = value;
       this.condition = condition;
       this.id = id;
+      this.newId = newId;
    }
 
 }
