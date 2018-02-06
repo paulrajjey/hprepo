@@ -5,6 +5,7 @@ import java.lang.Number;
 rule "EligibilityRulebasedModification"
 	dialect "mvel"
 	when
-		PreAuthorization( isEligible == "Y" )
+		aa : PreAuthorization( isEligible == "Y" )
 	then
+		aa.setAge( 4 );
 end
