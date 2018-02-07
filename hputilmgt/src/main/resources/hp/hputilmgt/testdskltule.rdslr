@@ -1,9 +1,0 @@
-package hp.hputilmgt;
-
-import java.lang.Number;
-
-rule "testdskltule"
-	dialect "mvel"
-	when
-	then
-end
